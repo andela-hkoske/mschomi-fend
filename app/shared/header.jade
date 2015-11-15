@@ -1,0 +1,14 @@
+md-toolbar.md-accent.md-whiteframe-z3.header-spacing
+  .md-toolbar-tools.md-accent
+    a(ui-sref='home')
+      img(src='images/logo.png' height='24' hide-sm)
+      span.text-color.white &nbsp; Mschomi
+    span(flex)
+
+    a(ng-repeat='menuItem in menu' ui-sref='{{menuItem.state}}' hide-sm)
+        md-button {{menuItem.name}}
+    md-button(ui-sref='login')
+      span.fa.fa-sign-in.fa-2x
+      md-tooltip Sign in
+
+
